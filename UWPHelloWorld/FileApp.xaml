@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="UWPHelloWorld.FileApp"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPHelloWorld"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button x:Name="readFile" Content="Read Data From File"
+                HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="63,518,0,0" Height="37" Width="174"
+                Click="ReadFile_Click"/>
+        <TextBox x:FieldModifier="public" x:Name="textBox"
+                 HorizontalAlignment="Left" VerticalAlignment="Top"
+                 Margin="58,145,0,0" Height="276" Width="245" TextWrapping="Wrap"/>
+        <Button x:Name="writeFile" Content="Write data to File"
+                HorizontalAlignment="Left"  VerticalAlignment="Top"
+                Margin="64,459, 0,0" Click="WriteFile_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left"
+                   VerticalAlignment="Top" Margin="386, 149,0,0"
+                   TextWrapping="Wrap" Height="266" Width="250"
+                   Foreground="#FF6231CD"/>
+    </Grid>
+</Page>

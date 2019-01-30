@@ -9,6 +9,22 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel HorizontalAlignment="Center">
+            <TextBlock Text="Hello, World!" Margin="20" Width="200" HorizontalAlignment="Left"/>
+            <TextBlock Text="Write your name." Margin="20" Width="200" HorizontalAlignment="Left"/>
+            <TextBox x:Name="textbox" Width="280" Margin="20" HorizontalAlignment="Left"/>
+            <Button x:Name="button" Content="Click Me" Margin="20" Click="button_Click"/>
+            <TextBlock x:Name="txtblock" Margin="20" HorizontalAlignment="Left"/>
+            <Button x:Name="open" Content="Open New page" Click="openPage"/>
+            <Button x:Name="open_one" Content="Open ONEWay page" Click="openOnePage"/>
+            <Button x:Name="open_two" Content="Open TwoWay page" Click="openTwoPage"/>
+            <Button x:Name="open_element" Content="Open ELement page" Click="Open_element_Click"/>
+            <Button x:Name="open_progressive" Content="Open Progressive page" Click="openProgressiveRendering"/>
+            <Button x:Name="open_adaptiveUi" Content="Open Adaptive page" Click="Open_adaptiveUi_Click"/>
+            <Button x:Name="open_relative" Content="Open relative page" Click="Open_relative_Click"/>
+            <Button x:Name="open_adaptiveCode" Content="Open AdaptiveCode page" Click="Open_adaptiveCode_Click"/>
+            <Button x:Name="open_file" Content="Open File Page" Click="Open_file_Click"/>
+            <Button x:Name="open_db" Content="Open DB Page" Click="Open_db_Click"/>
+        </StackPanel>
     </Grid>
 </Page>

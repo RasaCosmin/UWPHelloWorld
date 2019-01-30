@@ -26,5 +26,67 @@ namespace UWPHelloWorld
         {
             this.InitializeComponent();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            if(textbox.Text != "")
+            {
+                txtblock.Text = "Hello: "+ textbox.Text;
+            }
+            else
+            {
+                txtblock.Text = "Please provide your name";
+            }
+        }
+
+        private void openPage(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(example));
+        }
+
+        private void openOnePage(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(OneWay));
+        }
+
+        private void openTwoPage(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(TwoWay));
+        }
+
+        private void Open_element_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Element));
+        }
+        
+        private void openProgressiveRendering(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(ProgressiveRendering));
+        }
+
+        private void Open_adaptiveUi_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AdaptiveUi));
+        }
+
+        private void Open_relative_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(RelativePage));
+        }
+
+        private void Open_adaptiveCode_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AdaptiveCode));
+        }
+
+        private void Open_file_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(FileApp));
+        }
+
+        private void Open_db_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(DatabaseConn));
+        }
     }
 }
